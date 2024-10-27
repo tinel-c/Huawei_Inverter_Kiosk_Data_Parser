@@ -1,4 +1,5 @@
-#! /usr/bin/python3
+#! /home/tinel/Huawei_Inverter_Kiosk_Data_Parser/.venv/bin/python
+#/usr/bin/python3
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options

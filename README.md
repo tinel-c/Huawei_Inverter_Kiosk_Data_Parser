@@ -55,4 +55,35 @@ https://skolo.online/documents/webscrapping/#step-2-install-chromedriver
 
 Test that the script is working
 
+```
+python3 huawei_kiosk_parser.py
+```
+
+To create a reccurent call create a crontab entry
+
+https://www.geeksforgeeks.org/python-script-that-is-executed-every-5-minutes/
+
+```
+crontab -e
+```
+
+Insert the reccurence at which the script needs to be executed
+```
+*/1 * * * * /home/tinel/Huawei_Inverter_Kiosk_Data_Parser/huawei_kiosk_parser.py
+```
+
+Ensure that the virtual environment created is referenced inside the python file first line
+```
+echo $VIRTUAL_ENV
+```
+
+Make the script executable
+```
+chmod u+x /home/tinel/Huawei_Inverter_Kiosk_Data_Parser/huawei_kiosk_parser.py >/dev/null 2>&1
+```
+
+To check that crontab executed use the following command
+```
+grep CRON /var/log/syslog
+```
 
