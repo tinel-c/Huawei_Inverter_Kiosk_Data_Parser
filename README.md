@@ -1,4 +1,8 @@
 # Huawei_Inverter_Kiosk_Data_Parser
+##
+Read data from 
+https://intl.fusionsolar.huawei.com/unisso/login.action?service=%2Funisess%2Fv1%2Fauth%3Fservice%3D%252Fnetecowebext%252Fhome%252Findex.html#/LOGIN
+
 ## Installation on ubuntu
 
 Update the system
